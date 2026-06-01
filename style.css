@@ -1,0 +1,260 @@
+/* -- Reset & Base -- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* -- Container -- */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* -- Header -- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.header-left h1 {
+    font-size: 1.8rem;
+    color: #e31937;
+    margin-bottom: 0.25rem;
+}
+
+.week-label {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.header-right {
+    display: flex;
+    gap: 0.75rem;
+}
+
+button {
+    padding: 0.6rem 1.25rem;
+    background-color: transparent;
+    border: 1px solid #e31937;
+    color: #e31937;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: #e31937;
+    color: #fff;
+}
+
+/* -- Table -- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+thead tr {
+    border-bottom: 1px solid #333;
+}
+
+th {
+    text-align: left;
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: #aaa;
+    font-weight: 500;
+}
+
+thead tr {
+    border-bottom: 1px solid #1a1a1a;
+    transition: background-color 0.15s;
+}
+
+tbody tr {
+    border-bottom: 1px solid #1a1a1a;
+    transition: background-color 0.15s;
+}
+
+td {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    vertical-align: middle;
+}
+
+/* -- Editable cells -- */
+.editable {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    transition: background-color 0.15s;
+}
+
+.editable:hover {
+    background-color: #1a1a1a;
+}
+
+.editable:focus {
+    outline: 1px solid #e31937;
+    background-color: #1a1a1a;
+}
+
+/* -- Badges -- */
+.badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    min-width: 40px;
+    text-align: center;
+}
+
+.badge.green {
+    background-color: #0a1f0a;
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+}
+
+.badge.yellow {
+    background-color: #1f1a0a;
+    color: #f39c12;
+    border: 1px solid #f39c12;
+}
+
+.badge.red {
+    background-color: #1f0a0a;
+    color: #e31937;
+    border: 1px solid #e31937;
+}
+
+/* -- Leave Badge -- */
+.badge-leave {
+    background-color: #0a0f1f;
+    color: #4a9eff;
+    border: 1px solid #4a9eff;
+    font-size: 0.75rem;
+    padding: 0.02rem 0.6rem;
+    border-radius: 20px;
+}
+
+/* -- Delete button -- */
+.delete-btn {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8rem;
+    border-color: #333;
+    color: #555;
+}
+
+.delete-btn:hover {
+    border-color: #e31937;
+    color: #e31937;
+    background-color: transparent;
+}
+
+/* -- Add row -- */
+.add-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.add-row input {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #f0f0f0;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    width: 200px;
+}
+
+.add-row input:focus {
+    outline: none;
+    border-color: #e31937;
+}
+
+/* -- History -- */
+.history-panel {
+    margin-top: 2rem;
+    border-top: 1px solid #222;
+    padding-top: 1.5rem;
+}
+
+.history-panel h2 {
+    font-size: 1.1rem;
+    color: #e31937;
+    margin-bottom: 1rem;
+}
+
+.history-entry {
+    background-color: #1a1a1a;
+    border: 1px solid #222;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.history-entry h3 {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 0.75rem;
+}
+
+.history-table {
+    width: 100%;
+    font-size: 0.85rem;
+    border-collapse: collapse;
+}
+
+.history-table td {
+    padding: 0.4rem 0.75rem;
+    border-bottom: 1px solid #1a1a1a;
+    color: #ccc;
+}
+
+.history-table td:first-child {
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+/* -- Mobile -- */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .add-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-row input {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}

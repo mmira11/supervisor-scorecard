@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Supervisor Scorecard</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="header">
+                <div class="header-left">
+                    <h1>Supervisor Scorecard</h1>
+                    <span class="week-label" id="week-label">Week of -</span>
+                </div>
+                <div class="header-right">
+                    <button id="history-btn">History</button>
+                    <button id="save-btn">Save Week</button>
+                </div>
+            </div>
+
+            <table id="scorecard">
+                <thead>
+                    <tr>
+                        <th>Supervisor</th>
+                        <th>Zone</th>
+                        <th>Safety</th>
+                        <th>Quality</th>
+                        <th>Attendance</th>
+                        <th>Notes</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="supervisor-rows">
+                </tbody>
+            </table>
+
+            <div class="add-row">
+                <input type="text" id="new-name" placeholder="Supervisor name" />
+                <input type="text" id="new-zone"  placeholder="Zone (e.g. T1, F2)" />
+                <button id="add-btn">+ Add Supervisor</button>
+            </div>
+
+            <div class="history-panel" id="history-panel" style="display:none;">
+                <h2>Past Weeks</h2>
+                <div id="history-list"></div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
