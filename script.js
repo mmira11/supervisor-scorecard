@@ -1,10 +1,10 @@
 // -- Default supervisors --
 const defaultSupervisors = [
-    { id: 1, name: 'Kenny', zone: 'T1-DL', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
-    { id: 2, name: 'Dillon', zone: 'F1', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
-    { id: 3, name: 'Micah', zone: 'F2-3', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
-    { id: 4, name: 'Kayla', zone: 'F4', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
-    { id: 5, name: 'Maricella', zone: 'F3', safety: 0, quality: 0, attendance: 100, notes: 'Baby bonding — returns July 1', onLeave: true },
+    { id: 1, name: 'John', zone: 'T1-DL', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
+    { id: 2, name: 'Michael', zone: 'F1', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
+    { id: 3, name: 'Miguel', zone: 'F2-3', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
+    { id: 4, name: 'Sarah', zone: 'F4', safety: 0, quality: 0, attendance: 100, notes: '', onLeave: false },
+    { id: 5, name: 'Sally', zone: 'F3', safety: 0, quality: 0, attendance: 100, notes: 'Baby bonding — returns July 1', onLeave: true },
 ];
 
 // -- State --
